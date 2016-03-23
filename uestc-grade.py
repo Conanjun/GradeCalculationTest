@@ -124,7 +124,7 @@ course_grade_kind['J'] = u'创新与拓展项目'
 course_grade_kind['K'] = u'实验课程'
 course_grade_kind['L'] = u'实习实训'
 
-for i in range(0, course_count-1):
+for i in range(0, course_count):
     if course_grade_list[i] >= 60 or course_grade_list[i] == u'通过' or course_grade_list == 'A' or course_grade_list == 'B' or course_grade_list == 'C':
         if course_code_list[i][0] in ('A','B','C','D','E','F','G','H','I','J','K','L'):
             course_grade_count[course_code_list[i][0]] = course_grade_count[course_code_list[i][0]] + float(course_credit_list[i])
